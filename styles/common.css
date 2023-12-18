@@ -1,0 +1,19 @@
+:root {
+  --dark: #002B45;
+  --header: #002B45 90%;
+  --grey: #FFF;
+  --light: #FBF6EF;
+  --additional: #001623;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Open Sans";
+}
+
+h1 {
+  font-family: "Lora";
+}
