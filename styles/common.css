@@ -1,19 +1,62 @@
 :root {
-  --dark: #002B45;
-  --header: #002B45 90%;
-  --grey: #FFF;
-  --light: #FBF6EF;
+  --dark: #002b45;
+  --header: rgba(0, 43, 69, 0.9);
+  --grey: #fff;
+  --light: #fbf6ef;
   --additional: #001623;
 }
 
 * {
   box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+header {
+  padding: 36px 150px;
+  background-color: var(--header);
+  color: var(--grey);
+}
+
+button {
+  text-transform: uppercase;
+  padding: 18px 32px;
+  font-size: 16px;
 }
 
 p {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
 }
 
 h1 {
-  font-family: "Lora";
+  font-family: 'Lora';
+}
+
+.logo {
+  gap: 35px;
+}
+
+.adress {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.contacts__button {
+  background-color: transparent;
+  color: var(--grey);
+  border: 1px solid var(--grey);
+  padding: 15px 27px;
+  font-size: 14px;
+}
+
+.contacts__phone a {
+  text-decoration: none;
+  color: var(--grey);
+  font-weight: 700;
 }
