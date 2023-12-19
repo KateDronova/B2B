@@ -12,6 +12,7 @@
     type="text/css" />
   <link href="https://db.onlinewebfonts.com/c/629a55a7e793da068dc580d184cc0e31?family=Open+Sans" rel="stylesheet"
     type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -66,21 +67,44 @@
         <div class="point"></div>
       </div>
       <svg class="banner__rect">
-        <rect x="0" y="0" width="125" height="1" style="fill:var(--grey);stroke:var(--grey);stroke-width:1"/>
+        <rect x="0" y="0" width="125" height="1" style="fill:var(--grey);stroke:var(--grey);stroke-width:1" />
       </svg>
     </section>
 
     <section class="advantages">
-      <div class="advantages__figure">
+      <figure class="advantages__figure">
         <img src="./assets/images/кухня_светлая.png" alt="кухня светлая">
-      </div>
+      </figure>
       <div class="advantages__content">
         <h2>Наши преимущества</h2>
+        <ul class="advantages__list flex">
+          <li class="flex">
+            <img src="./assets/icons/иконка_кухни.png" alt="популярность наших кухонь">
+            <div class="advantages__item">
+              <strong>С 2000 г на рынке</strong><br>наши кухни выбрали 10 000+ семей
+            </div>
+          </li>
+          <li class="flex">
+            <img src="./assets/icons/иконка_сроки.png" alt="сжатые сроки">
+            <div class="advantages__item">
+              <strong>Сжатые сроки</strong><br>изготовление кухни от 20 дней
+            </div>
+          </li>
+          <li class="flex">
+            <img src="./assets/icons/иконка_дизайн_проект.png" alt="бесплатный дизайн проект">
+            <div class="advantages__item">
+              <strong>Дизайн проект</strong><br>бесплатно за 30 минут
+            </div>
+          </li>
+        </ul>
       </div>
+      <svg class="advantages__rect">
+        <rect x="50" y="0" width="1005" height="1" style="fill:var(--dark);stroke:var(--dark);stroke-width:1" />
+      </svg>
     </section>
 
     <section class="catalog">
-      <h2>Посмотрите наши работы</h2>
+      <!-- <h2>Посмотрите наши работы</h2> -->
     </section>
 
   </main>

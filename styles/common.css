@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  padding: 32px 125px 36px 150px;
+  padding: 32px 147px 36px 152px;
   background-color: var(--header);
   color: var(--grey);
 
@@ -66,11 +66,12 @@ p {
 }
 
 .contacts__button {
-  background-color: transparent;
+  font-size: 14px;
   color: var(--grey);
+  background-color: transparent;
   border: 0.84px solid var(--grey);
   padding: 14px 27px;
-  font-size: 14px;
+  margin-top: 2px;
 }
 
 .contacts__phone a {
@@ -98,7 +99,7 @@ p {
 }
 
 .banner h1 {
-  font-family: "Lora Regular";
+  font-family: 'Lora Regular';
   font-size: 64px;
   font-weight: 400;
   margin-bottom: 0px;
@@ -143,15 +144,15 @@ p {
 }
 .banner__pros_1 {
   top: 180px;
-  left: 28.8%;
+  left: 28.6%;
 }
 .banner__pros_2 {
   top: 330px;
-  left: 50.5%;
+  left: 50%;
 }
 .banner__pros_3 {
   top: 530px;
-  left: 46.8%;
+  left: 46.4%;
 }
 .banner__pros .point {
   border-radius: 50%;
@@ -170,7 +171,7 @@ p {
   content: '';
   border-radius: 50%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  
+
   width: 19px;
   height: 19px;
   top: 6px;
@@ -185,16 +186,27 @@ p {
   top: 377px;
   z-index: 4;
 }
+.advantages__rect {
+  position: absolute;
+  height: 3px;
+  right: 0;
+  top: 122px;
+  width: 1080px;
+  z-index: 4;
+}
 
-
-.advantages h2, .catalog h2 {
+.advantages h2,
+.catalog h2 {
   color: var(--dark);
   font-size: 36px;
-  font-family: "Lora Bold";
+  font-family: 'Lora Bold';
+  line-height: 43.2px;
+  margin-top: 0px;
 }
 
 .advantages {
   min-height: 405px;
+  padding: 100px;
   background-color: var(--light);
   position: relative;
   z-index: 2;
@@ -202,6 +214,7 @@ p {
 
 .advantages__figure {
   height: 532px;
+  margin: 0;
   position: absolute;
   left: 0;
   top: -38px;
@@ -209,5 +222,35 @@ p {
 }
 
 .advantages__content {
-  margin-left: 512px;
+  margin-left: 412px;
+}
+
+.advantages__list {
+  padding-left: 8px;
+  margin-top: 55px;
+  justify-content: start;
+  align-items: start;
+  gap: 75px;
+}
+
+.advantages__list li::marker {
+  color: transparent;
+}
+
+.advantages__list li {
+  max-width: 370px;
+  font-size: 24px;
+  line-height: 32.68px;
+  gap: 30px;
+  align-items: start;
+  color: var(--dark);
+}
+
+.advantages__list img {
+  width: 70px;
+  height: auto;
+}
+
+.advantages__item {
+  max-width: 265px;
 }
