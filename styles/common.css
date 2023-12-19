@@ -191,7 +191,7 @@ p {
   height: 3px;
   right: 0;
   top: 122px;
-  width: 1080px;
+  width: calc(76% - 400px);
   z-index: 4;
 }
 
@@ -222,7 +222,7 @@ p {
 }
 
 .advantages__content {
-  margin-left: 412px;
+  margin-left: 24%;
 }
 
 .advantages__list {
