@@ -11,6 +11,11 @@
   font-family: 'Open Sans';
 }
 
+body {
+  position: relative;
+  margin: 0;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -19,9 +24,15 @@
 }
 
 header {
-  padding: 36px 150px;
+  padding: 32px 125px 36px 150px;
   background-color: var(--header);
   color: var(--grey);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 button {
@@ -34,29 +45,169 @@ p {
   font-family: 'Open Sans';
 }
 
-h1 {
-  font-family: 'Lora';
-}
-
 .logo {
   gap: 35px;
 }
 
+.contacts {
+  width: 49%;
+  padding-left: 2px;
+}
+
+.contacts__nav {
+  margin-top: 5px;
+}
+
 .adress {
   font-size: 14px;
-  line-height: 28px;
+  line-height: 26px;
+  margin-right: 50px;
+  width: 230px;
 }
 
 .contacts__button {
   background-color: transparent;
   color: var(--grey);
-  border: 1px solid var(--grey);
-  padding: 15px 27px;
+  border: 0.84px solid var(--grey);
+  padding: 14px 27px;
   font-size: 14px;
 }
 
 .contacts__phone a {
   text-decoration: none;
-  color: var(--grey);
+  font-size: 20px;
   font-weight: 700;
+  color: var(--grey);
+  margin-left: 5px;
+}
+
+.banner {
+  position: relative;
+  color: var(--grey);
+  min-height: 850px;
+  padding: 220px 150px 138px 150px;
+
+  background-image: url(../assets/images/первый_экран.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner__content {
+  min-height: 423px;
+}
+
+.banner h1 {
+  font-family: "Lora Regular";
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.banner__price {
+  font-size: 28px;
+  justify-content: start;
+}
+
+.banner__subtitle {
+  margin-left: 16px;
+  padding-top: 8px;
+}
+
+.banner__count {
+  position: relative;
+  top: 15px;
+}
+.banner__count p {
+  font-size: 14px;
+}
+.banner__count img {
+  position: absolute;
+  left: 247px;
+  top: 10px;
+}
+
+.banner__button {
+  background-color: transparent;
+  color: var(--grey);
+  border: 1px solid var(--grey);
+}
+
+.banner__pros {
+  background-color: var(--header);
+  border-radius: 15px;
+  padding: 18px 34px 18px 32px;
+  font-size: 18px;
+
+  position: absolute;
+}
+.banner__pros_1 {
+  top: 180px;
+  left: 28.8%;
+}
+.banner__pros_2 {
+  top: 330px;
+  left: 50.5%;
+}
+.banner__pros_3 {
+  top: 530px;
+  left: 46.8%;
+}
+.banner__pros .point {
+  border-radius: 50%;
+  background-color: var(--grey);
+  width: 31px;
+  height: 31px;
+
+  position: absolute;
+  top: 28px;
+  right: -15px;
+  z-index: 2;
+}
+.banner__pros .point::after {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
+  width: 19px;
+  height: 19px;
+  top: 6px;
+  right: 6px;
+  z-index: 3;
+}
+
+.banner__rect {
+  position: absolute;
+  height: 3px;
+  left: 0;
+  top: 377px;
+  z-index: 4;
+}
+
+
+.advantages h2, .catalog h2 {
+  color: var(--dark);
+  font-size: 36px;
+  font-family: "Lora Bold";
+}
+
+.advantages {
+  min-height: 405px;
+  background-color: var(--light);
+  position: relative;
+  z-index: 2;
+}
+
+.advantages__figure {
+  height: 532px;
+  position: absolute;
+  left: 0;
+  top: -38px;
+  z-index: 3;
+}
+
+.advantages__content {
+  margin-left: 512px;
 }

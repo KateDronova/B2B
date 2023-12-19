@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./styles/common.css">
-  <link href="https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora" rel="stylesheet"
+  <link href="https://db.onlinewebfonts.com/c/194a4e87b627adf12e8094e7babca496?family=Lora+Regular" rel="stylesheet"
+    type="text/css" />
+  <link href="https://db.onlinewebfonts.com/c/08aac859b9b566ef55a7e480af3011d2?family=Lora+Bold" rel="stylesheet"
     type="text/css" />
   <link href="https://db.onlinewebfonts.com/c/629a55a7e793da068dc580d184cc0e31?family=Open+Sans" rel="stylesheet"
     type="text/css" />
@@ -21,12 +23,12 @@
     </div>
     <div class="contacts flex">
       <div class="adress"><strong>Производство кухонь на заказ</strong><br>Анапа, ул. Крылова, д. 27</div>
-      <nav class="flex">
-        <div class="contacts__telegram">
-          <a href="#"><img src="./assets/icons/telegram.png" alt="наш telegram"></a>
-        </div>
+      <nav class="contacts__nav flex">
         <div class="contacts__whatsapp">
           <a href="#"><img src="./assets/icons/whatsapp.png" alt="наш whatsapp"></a>
+        </div>
+        <div class="contacts__telegram">
+          <a href="#"><img src="./assets/icons/telegram.png" alt="наш telegram"></a>
         </div>
         <div class="contacts__phone">
           <a href="tel:+13-674-567-75-54">
@@ -38,11 +40,52 @@
     </div>
   </header>
   <main>
-    <section class="banner"></section>
-    <section class="advantages"></section>
-    <section class="catalog"></section>
+
+    <section class="banner flex">
+      <div class="banner__content">
+        <h1>Изготовим роскошную<br>дизайнерскую кухню</h1>
+        <div class="banner__price flex">
+          <img src="./assets/icons/кошелёк.png" alt="кошелёк">
+          <p class="banner__subtitle">
+            <strong>Цена на 12-24% ниже,</strong><br>чем у посредников
+          </p>
+        </div>
+        <div class="banner__count">
+          <p>Рассчитаем стоимость кухни-мечты</p>
+          <img src="./assets/icons/cтрелка.png" alt="стрелка до кнопки">
+          <button class="banner__button">Заказать расчёт</button>
+        </div>
+      </div>
+      <div class="banner__pros banner__pros_1">Огромный выбор<br>бытовой техники
+        <div class="point"></div>
+      </div>
+      <div class="banner__pros banner__pros_2">Изысканный гарнитур<br>любого размера
+        <div class="point"></div>
+      </div>
+      <div class="banner__pros banner__pros_3">Выдающиеся<br>сорта древесины
+        <div class="point"></div>
+      </div>
+      <svg class="banner__rect">
+        <rect x="0" y="0" width="125" height="1" style="fill:var(--grey);stroke:var(--grey);stroke-width:1"/>
+      </svg>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__figure">
+        <img src="./assets/images/кухня_светлая.png" alt="кухня светлая">
+      </div>
+      <div class="advantages__content">
+        <h2>Наши преимущества</h2>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <h2>Посмотрите наши работы</h2>
+    </section>
+
   </main>
 
+  <script></script>
 </body>
 
 </html>
