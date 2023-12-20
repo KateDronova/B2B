@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Кухня 097 минимализм",
+    "description": "Угловая белая кухня со столешницей под бетон.",
+    "priceEconomy": "168 000 р.",
+    "priceStandard": "217 000 р.",
+    "pricePremium": "270 000 р.",
+    "length": "4900 мм",
+    "imgSrcs": [
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg"
+    ]
+  },
+  {
+    "title": "Кухня 097 минимализм",
+    "description": "Угловая белая кухня со столешницей под бетон.",
+    "priceEconomy": "168 000 р.",
+    "priceStandard": "217 000 р.",
+    "pricePremium": "270 000 р.",
+    "length": "4900 мм",
+    "imgSrcs": [
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg"
+    ]
+  },
+  {
+    "title": "Кухня 097 минимализм",
+    "description": "Угловая белая кухня со столешницей под бетон.",
+    "priceEconomy": "168 000 р.",
+    "priceStandard": "217 000 р.",
+    "pricePremium": "270 000 р.",
+    "length": "4900 мм",
+    "imgSrcs": [
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg"
+    ]
+  },
+  {
+    "title": "Кухня 097 минимализм",
+    "description": "Угловая белая кухня со столешницей под бетон.",
+    "priceEconomy": "168 000 р.",
+    "priceStandard": "217 000 р.",
+    "pricePremium": "270 000 р.",
+    "length": "4900 мм",
+    "imgSrcs": [
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg",
+      "./assets/images/пример_кухни.jpg"
+    ]
+  }
+]

@@ -37,7 +37,7 @@
           </a>
         </div>
       </nav>
-      <button class="contacts__button">Заказать звонок</button>
+      <button type="button" class="contacts__button">Заказать звонок</button>
     </div>
   </header>
   <main>
@@ -54,7 +54,7 @@
         <div class="banner__count">
           <p>Рассчитаем стоимость кухни-мечты</p>
           <img src="./assets/icons/cтрелка.png" alt="стрелка до кнопки">
-          <button class="banner__button wow jello">Заказать расчёт</button>
+          <button type="button" class="banner__button wow tada">Заказать расчёт</button>
         </div>
       </div>
       <div class="banner__pros banner__pros_1 wow fadeInRight">Огромный выбор<br>бытовой техники
@@ -67,7 +67,7 @@
         <div class="point"></div>
       </div>
       <svg class="banner__rect">
-        <rect x="0" y="0" width="125" height="1" style="fill:var(--grey);stroke:var(--grey);stroke-width:1" />
+        <rect x="0" y="0" width="100%" height="1" style="fill:var(--grey);stroke:var(--grey);stroke-width:1" />
       </svg>
     </section>
 
@@ -104,11 +104,46 @@
     </section>
 
     <section class="catalog">
-      <!-- <h2>Посмотрите наши работы</h2> -->
+      <h2>Посмотрите наши работы</h2>
+      <svg class="catalog__rect">
+        <rect x="0" y="0" width="100%" height="1" style="fill:var(--dark);stroke:var(--dark);stroke-width:1" />
+      </svg>
+      <svg class="catalog__rectBig">
+        <rect x="0" y="0" width="100%" height="100%" style="fill:transparent;stroke:var(--dark);stroke-width:1" />
+      </svg>
+
+      <nav class="catalog__nav flex">
+        <div>
+          <select name="планировка" id="plan">
+            <option value="прямые" checked>пЛАНИРОВКА</option>
+            <option value="прямые"><span>Прямые</span><sup>100</sup></option>
+            <option value="прямые">Угловые<sup>134</sup></option>
+            <option value="прямые">С островом<sup>250</sup></option>
+            <option value="прямые">Трёхъярусные<sup>120</sup></option>
+            <option value="прямые">П-образные<sup>170</sup></option>
+            <!-- <optgroup label="пЛАНИРОВКА">
+            </optgroup> -->
+          </select>
+          <select name="стиль" id="style">
+            <option value="прямые" checked>сТИЛЬ КУХНИ</option>
+          </select>
+          <select name="цвет" id="color">
+            <option value="прямые" checked>цВЕТ</option>
+          </select>
+        </div>
+
+        <div>
+          <button class="catalog__filterButton" type="submit">применить</button>
+          <button class="catalog__resetButton" type="reset">сбросить</button>
+        </div>
+      </nav>
+      
+      <div class="catalog__list flex"></div>
     </section>
 
   </main>
 
+  <script src="./scripts/script.js"></script>
   <script src="./scripts/wow.min.js"></script>
   <script>
     new WOW().init();
