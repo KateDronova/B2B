@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  padding: 32px 147px 36px 152px;
+  padding: 32px 7.6% 36px 7.9%;
   background-color: var(--header);
   color: var(--grey);
 
@@ -35,9 +35,12 @@ header {
   z-index: 2;
 }
 
+button {
+  text-transform: uppercase;
+}
+
 button,
 select {
-  text-transform: uppercase;
   padding: 18px 32px;
   font-size: 16px;
   height: 58px;
@@ -96,7 +99,7 @@ p {
   position: relative;
   color: var(--grey);
   min-height: 850px;
-  padding: 220px 150px 138px 7.8%;
+  padding: 220px 7.8% 138px 7.8%;
 
   background-image: url(../assets/images/первый_экран.jpg);
   background-repeat: no-repeat;
@@ -158,15 +161,15 @@ p {
 }
 .banner__pros_1 {
   top: 180px;
-  left: 28.6%;
+  right: calc(72.4% - 239px);
 }
 .banner__pros_2 {
   top: 330px;
-  left: 50%;
+  right: calc(50.9% - 281px);
 }
 .banner__pros_3 {
   top: 530px;
-  left: 46.4%;
+  right: calc(54.4% - 230px);
 }
 .banner__pros .point {
   border-radius: 50%;
@@ -221,7 +224,7 @@ p {
 
 .advantages {
   min-height: 405px;
-  padding: 100px;
+  padding: 100px 5.2%;
   background-color: var(--light);
   position: relative;
   z-index: 2;
@@ -297,7 +300,7 @@ p {
 .catalog__nav {
   margin-top: 50px;
   margin-bottom: 45px;
-  max-width: 59%;
+  max-width: 953px;
 }
 
 .catalog__nav select {
@@ -314,10 +317,20 @@ p {
   margin-right: 0;
   width: 137px;
 }
+.catalog__nav select option {
+  background-color: var(--grey);
+  color: var(--dark);
+  &:active,
+  &:focus {
+    background-color: var(--grey);
+    color: var(--dark);
+  }
+}
+
 .catalog__filterButton {
   margin-right: 9px;
   border: none;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
 }
 .catalog__resetButton {
   border: 1px solid #000;
@@ -425,5 +438,237 @@ p {
   &:active {
     border-color: #011a2a;
     color: #011a2a;
+  }
+}
+
+@media (width < 1880px) {
+  .contacts {
+    width: fit-content;
+  }
+
+  .adress {
+    margin-right: 10px;
+  }
+
+  .banner h1 {
+    font-size: 54px;
+  }
+
+  .banner__pros_2 {
+    margin-right: -20px;
+  }
+
+  .advantages__item {
+    font-size: smaller;
+    width: fit-content;
+  }
+  .advantages__figure {
+    height: auto;
+    width: 22svw;
+    top: -8px;
+  }
+  .advantages__figure img {
+    height: auto;
+    width: 100%;
+  }
+  .advantages__list {
+    gap: 45px;
+    justify-content: space-between;
+  }
+
+  .catalog__list {
+    flex-direction: column;
+  }
+  .catalog__nav {
+    margin-top: 50px;
+    margin-bottom: 45px;
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (width < 1380px) {
+  header {
+    padding-bottom: 1.2em;
+    padding-top: 1.2em;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: start;
+    gap: 18px;
+    align-items: center;
+  }
+  .logo__yandex {
+    width: 70%;
+  }
+
+  .contacts {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .contacts__nav {
+    flex-direction: row-reverse;
+  }
+  .contacts__button {
+    font-size: 14px;
+    padding: 12px 22px;
+  }
+  .contacts__phone a {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  .banner h1 {
+    font-size: 50px;
+  }
+  .banner__pros {
+    border-radius: 10px;
+    padding: 14px 26px 14px 26px;
+    margin-right: -20%;
+  }
+  .banner__subtitle {
+    font-size: smaller;
+  }
+
+  .advantages {
+    padding-top: 60px;
+    min-height: fit-content;
+  }
+  .advantages__list li {
+    max-width: 250px;
+    font-size: 20px;
+    line-height: normal;
+    gap: 10px;
+  }
+  .advantages__list img {
+    width: 50px;
+  }
+  .advantages__rect {
+    top: 82px;
+  }
+
+  .catalog__nav {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (width < 980px) {
+  .banner__pros {
+    display: none;
+  }
+  .banner h1 {
+    font-size: 40px;
+    line-height: normal;
+  }
+  .advantages__list {
+    flex-direction: column;
+  }
+  .advantages__figure {
+    width: 280px;
+  }
+  .advantages__content {
+    margin-left: 280px;
+  }
+  .advantages__rect {
+    width: calc(76% - 440px);
+  }
+  .advantages h2,
+  .catalog h2 {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .catalog {
+    padding: 60px 7.8%;
+  }
+  .catalog__rect {
+    top: 81px;
+  }
+  .catalog__item {
+    width: 480px;
+    height: 400px;
+  }
+  .catalog__content {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    align-items: end;
+  }
+  .catalog__itemTitle {
+    font-size: 20px;
+  }
+  .catalog__itemSlider {
+    width: 160px;
+    height: 280px;
+    top: 20px;
+    left: -30px;
+  }
+  .catalog__itemSlider img {
+    width: auto;
+    height: 100%;
+  }
+  .catalog__itemDescription {
+    max-width: 200px;
+  }
+  .catalog__buttons {
+    align-self: stretch;
+  }
+  .catalog__priceTable {
+    width: fit-content;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .catalog__priceTable th,
+  .catalog__priceTable td {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@media (width < 532px) {
+  .advantages__figure {
+    width: 320px;
+    top: 550px;
+    left: calc((100% - 320px) / 2);
+  }
+  .banner__rect,
+  .advantages__rect,
+  .catalog__rect,
+  .catalog__rectBig,
+  .logo__yandex,
+  .advantages__figure,
+  .catalog__itemDescription,
+  .catalog__priceTable,
+  .catalog__countButton,
+  .catalog__itemLength {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+  }
+  .banner {
+    padding-top: 320px;
+  }
+  .advantages__content {
+    margin-left: 0;
+  }
+  .catalog__item {
+    width: 300px;
+    height: 450px;
+  }
+  .catalog__buttons {
+    align-self: center;
+  }
+  .catalog__content {
+    align-items: center;
+  }
+  .catalog__itemSlider {
+    top: 70px;
+    left: calc((100% - 240px) / 2);
+  }
+  .catalog__nav button {
+    margin-bottom: 10px;
   }
 }
