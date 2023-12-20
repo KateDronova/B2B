@@ -625,6 +625,10 @@ p {
     text-align: center;
     padding-left: 0;
   }
+  .catalog__itemSliderOptions {
+    width: 240px;
+    height: 50px;
+  }
 }
 
 @media (width < 532px) {
@@ -642,7 +646,8 @@ p {
   .catalog__itemDescription,
   .catalog__priceTable,
   .catalog__countButton,
-  .catalog__itemLength {
+  .catalog__itemLength,
+  .catalog__itemSliderOptions  {
     display: none;
   }
   header {
